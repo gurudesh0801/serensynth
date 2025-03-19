@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="heroContainer">
         <div className="mainHeading">
           <h1>
-            Empowering SEM, & D2c Brands with scalable eCommerce & marketing
-            Soltuion
+            Empowering SME & D2C Brands with scalable E-Commerce & Marketing
+            Solution
           </h1>
           <p>
             From logistics to digital growth we manage everything you need to

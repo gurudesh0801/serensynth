@@ -15,7 +15,7 @@ const Hero = () => {
             From logistics to digital growth we manage everything you need to
             scale your business
           </p>
-          <button>
+          <button className="heroBtn">
             Explore Our Solution
             <span>
               <FaArrowRight />

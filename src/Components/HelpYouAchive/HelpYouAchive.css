@@ -1,0 +1,136 @@
+.secContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Text Container */
+.textCont {
+  flex: 1;
+  max-width: 70%;
+}
+
+.textCont h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
+  border-bottom: 2px solid #04133b80;
+}
+
+.textCont p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem 0rem;
+  color: #555;
+}
+
+.textCont button {
+  display: flex;
+  align-items: center;
+  background-color: #06153a;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.textCont button span {
+  margin-left: 0.5rem;
+}
+
+.textCont button:hover {
+  background-color: #0056b3;
+}
+
+/* Image Container */
+.imgCont {
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgCont img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+  .textCont h1 {
+    font-size: 2rem;
+  }
+
+  .textCont p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium Screens (Laptops & Tablets) */
+@media (max-width: 1024px) {
+  .secContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textCont {
+    max-width: 100%;
+  }
+
+  .imgCont {
+    max-width: 100%;
+  }
+
+  .textCont button {
+    margin: 1rem auto;
+  }
+}
+
+/* Small Screens (Mobiles) */
+@media (max-width: 600px) {
+  .textCont h1 {
+    font-size: 1.8rem;
+  }
+
+  .textCont p {
+    font-size: 1rem;
+  }
+
+  .textCont button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .imgCont img {
+    max-width: 350px;
+  }
+}
+
+/* Extra Small Screens (Small Mobiles) */
+@media (max-width: 400px) {
+  .textCont h1 {
+    font-size: 1.5rem;
+  }
+
+  .textCont p {
+    font-size: 0.9rem;
+  }
+
+  .textCont button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .imgCont img {
+    max-width: 280px;
+  }
+}

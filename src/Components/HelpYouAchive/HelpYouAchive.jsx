@@ -6,26 +6,44 @@ import "./HelpYouAchive.css";
 const HelpYouAchive = () => {
   return (
     <>
-      <div className="secContainer">
-        <div className="textCont">
-          <h1>What we can help you achieve ?</h1>
-          <p>
-            Unlock Growth, Upskill & Scale with Us! <br /> We offer
-            comprehensive solutions in business acceleration, <br />
-            technology enablement, eCommerce, logistics, and career <br />
-            advancement. Whether you're an entrepreneur, professional, or <br />
-            startup, we have the expertise to drive your success.
-          </p>
-          <button>
-            Lets’s get to work
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
+      <div className="container2">
+        <div className="secContainer">
+          <div className="firstCont">
+            <h1>What we can help you achieve ?</h1>
+            <button>
+              Lets’s get to work &nbsp;
+              <span>
+                <FaArrowRight />
+              </span>
+            </button>
+          </div>
+
+          <div className="secCont">
+            <h1>Let's Grow Together</h1>
+            <button>
+              Lets’s get to work &nbsp;
+              <span>
+                <FaArrowRight />
+              </span>
+            </button>
+          </div>
         </div>
 
-        <div className="imgCont">
-          <img src={img} alt="" />
+        <div className="thirdCont">
+          <h1>Sectors We Serve</h1>
+
+          <div className="items">
+            <ul>
+              <li>E-Commerce</li>
+              <li>Logistics</li>
+              <li>Media</li>
+            </ul>
+            <ul>
+              <li>Consumers Products</li>
+              <li>Retail</li>
+              <li>Manufacturing</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

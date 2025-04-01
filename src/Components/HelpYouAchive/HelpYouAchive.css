@@ -1,9 +1,23 @@
-/* General Styles */
+/* General Styles with Scroll Reveal Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state when scrolled into view */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Container Animation */
 .container2 {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Section Container */
@@ -14,6 +28,7 @@
   justify-content: center;
   border-radius: 2rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1.2s ease-in-out;
 }
 
 /* First & Second Container */
@@ -34,6 +49,7 @@
   width: 55%;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
+  animation: slideInLeft 1.2s ease-in-out;
 }
 
 .secCont {
@@ -42,22 +58,24 @@
   width: 45%;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  animation: slideInRight 1.2s ease-in-out;
 }
 
-/* Headings */
+/* Headings Animation */
 .firstCont h1,
 .secCont h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #04133b80;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .secCont h1 {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Buttons */
+/* Buttons Animation */
 .firstCont button,
 .secCont button {
   background-color: #06153a;
@@ -67,8 +85,8 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  align-self: flex-start;
+  transition: transform 0.3s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .secCont button {
@@ -76,12 +94,10 @@
   color: black;
 }
 
-.firstCont button:hover {
-  background-color: #0056b3;
-}
-
+.firstCont button:hover,
 .secCont button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+  animation: bounce 0.5s ease-in-out;
 }
 
 /* Sectors Section */
@@ -89,6 +105,7 @@
   text-align: center;
   margin-top: 3rem;
   padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .thirdCont h1 {
@@ -99,7 +116,7 @@
   display: inline-block;
 }
 
-/* Items List */
+/* Items List Animation */
 .items {
   display: flex;
   justify-content: space-between;
@@ -107,11 +124,7 @@
   gap: 2rem;
   max-width: 800px;
   margin: 2rem auto;
-}
-
-.items ul {
-  list-style: none;
-  padding: 0;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .items li {
@@ -119,6 +132,60 @@
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 0.5rem;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Responsive Design */

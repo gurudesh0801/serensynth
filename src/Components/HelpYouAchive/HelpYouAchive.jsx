@@ -1,27 +1,54 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import img from "../../assets/Images/image1.png";
 import "./HelpYouAchive.css";
 
-const HelpYouAchive = () => {
+const HelpYouAchieve = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      const elements = sectionRef.current.querySelectorAll(".hidden");
+      elements.forEach((el) => observer.observe(el));
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        const elements = sectionRef.current.querySelectorAll(".hidden");
+        elements.forEach((el) => observer.unobserve(el));
+      }
+    };
+  }, []);
+
   return (
     <>
-      <div className="container2">
+      <div className="container2" ref={sectionRef}>
         <div className="secContainer">
-          <div className="firstCont">
+          <div className="firstCont hidden">
             <h1>What we can help you achieve ?</h1>
             <button>
-              Lets’s get to work &nbsp;
+              Let’s get to work &nbsp;
               <span>
                 <FaArrowRight />
               </span>
             </button>
           </div>
 
-          <div className="secCont">
+          <div className="secCont hidden">
             <h1>Let's Grow Together</h1>
             <button>
-              Lets’s get to work &nbsp;
+              Let’s get to work &nbsp;
               <span>
                 <FaArrowRight />
               </span>
@@ -29,7 +56,7 @@ const HelpYouAchive = () => {
           </div>
         </div>
 
-        <div className="thirdCont">
+        <div className="thirdCont hidden">
           <h1>Sectors We Serve</h1>
 
           <div className="items">
@@ -50,4 +77,4 @@ const HelpYouAchive = () => {
   );
 };
 
-export default HelpYouAchive;
+export default HelpYouAchieve;

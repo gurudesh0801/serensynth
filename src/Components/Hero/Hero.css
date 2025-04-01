@@ -1,11 +1,13 @@
 /* Container Styles */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 .container {
   width: 100%;
   height: 100vh;
   background: url("../../assets/Images/bgimg3.jpg") center/cover no-repeat;
   position: relative;
+  overflow: hidden;
+  animation: zoomInBackground 8s ease-in-out infinite alternate;
 }
 
 .container::before {
@@ -15,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -31,15 +33,26 @@
   color: white;
 }
 
-/* Main Heading Section */
 .mainHeading {
   max-width: 60%;
+  animation: fadeInLeft 1s ease-out;
+}
+
+/* Text Animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .mainHeading h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 600;
   font-size: 2.4rem;
   margin-bottom: 20px;
   line-height: 1.3;
@@ -47,14 +60,25 @@
 
 .mainHeading p {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  animation: fadeInUp 1.5s ease-out;
 }
 
-/* Button Styles */
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Styles with Pulse Animation */
 .heroBtn {
   display: flex;
   align-items: center;
@@ -62,25 +86,49 @@
   background-color: #d6b68e;
   color: white;
   border: none;
-  padding: 10px 28px;
+  padding: 12px 32px;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  animation: pulse 1.5s infinite;
 }
 
 .heroBtn:hover {
   background-color: #0056b3;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .heroBtn span {
   display: flex;
 }
 
-/* Responsive Styles */
+/* Scroll Reveal Animation */
+.hidden {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-/* For Tablets and Small Screens */
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .mainHeading h1 {
     font-size: 2.5rem;
@@ -96,10 +144,12 @@
   }
 }
 
-/* For Mobile Devices */
 @media (max-width: 768px) {
   .heroContainer {
-    padding: 0 5%;
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   .mainHeading {
@@ -117,11 +167,17 @@
   .heroBtn {
     font-size: 0.85rem;
     padding: 10px 20px;
+    margin: 0 auto;
   }
 }
 
-/* For Extra Small Devices */
 @media (max-width: 480px) {
+  .heroContainer {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
   .mainHeading h1 {
     font-size: 1.5rem;
   }
@@ -133,5 +189,6 @@
   .heroBtn {
     font-size: 0.8rem;
     padding: 8px 16px;
+    margin: 0 auto;
   }
 }

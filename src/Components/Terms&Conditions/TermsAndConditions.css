@@ -1,0 +1,98 @@
+/* General styles */
+.terms-container {
+  padding: 100px 20px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.terms-container h1 {
+  text-align: center;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.terms-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.terms-container ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  font-size: 1.1rem;
+}
+
+.terms-container li {
+  margin-bottom: 15px;
+}
+
+/* Section-specific styling */
+.firstPara,
+.secondPara,
+.thirdPara {
+  padding: 0px 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.bold-statement {
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .terms-container {
+    padding: 40px 15px;
+  }
+
+  .terms-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 80px 10px;
+  }
+
+  .terms-container h1 {
+    font-size: 2rem;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    padding: 100px 8px;
+  }
+
+  .terms-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .terms-container p,
+  .terms-container li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Hover effect */
+.terms-container li:hover {
+  color: #ff4d4d;
+  cursor: pointer;
+}

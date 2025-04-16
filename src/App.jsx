@@ -8,6 +8,7 @@ import Section3 from "./Components/Section3/Section3";
 import Footer from "./Components/Footer/Footer";
 import TermsAndConditions from "./Components/Terms&Conditions/TermsAndConditions";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import WhoWeAre from "./Components/WhoWeAre/WhoWeAre";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/terms&conditions" element={<TermsAndConditions />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/who-we-are" element={<WhoWeAre />} />
       </Routes>
       <Footer />
     </Router>

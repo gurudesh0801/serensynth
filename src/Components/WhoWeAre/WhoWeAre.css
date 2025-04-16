@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../assets/Images/bgimg3.jpg") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.aboutContainer .aboutHero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.aboutContainer .aboutHero div {
+  max-width: 800px;
+  padding: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.aboutContainer .aboutHero div h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-family: "Source Serif 4", serif;
+}
+
+/* Responsive text sizes */
+.aboutContainer .aboutHero div p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive button */
+.aboutContainer .aboutHero div .about-btn {
+  width: 10rem;
+  background: #0c162d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 2rem;
+}
+
+.aboutContainer .aboutHero div .about-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.services {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.services h1 {
+  font-size: 4rem;
+  color: #05143d;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0px 0px 10px white;
+}
+.services .services1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  gap: 2rem;
+}
+.services .services1 .leftSide {
+  width: 40%;
+}
+.services .services1 .leftSide h3 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #d6b68e;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.services .services1 .leftSide p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #848383;
+}
+.services .services1 .leftSide button {
+  font-size: 1rem;
+  background: #05143d;
+  color: white;
+  border-radius: 0.6rem;
+  padding: 0.7rem 3rem;
+}
+.services .services1 .rightSide {
+  width: 40%;
+}
+.services .services1 .rightSide img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.services .services2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  gap: 2rem;
+}
+.services .services3 .rightSide {
+  width: 50%;
+}
+.services .services2 .rightSide h3 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #d6b68e;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.services .services2 .rightSide p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #848383;
+  width: 80%;
+}
+.services .services2 .rightSide button {
+  font-size: 1rem;
+  background: #05143d;
+  color: white;
+  border-radius: 0.6rem;
+  padding: 0.7rem 3rem;
+  margin-right: 11rem;
+}
+.services .services2 .leftSide {
+  width: 60%;
+}
+.services .services2 .leftSide img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.services .services3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  gap: 2rem;
+}
+.services .services3 .leftSide {
+  width: 40%;
+}
+.services .services3 .leftSide h3 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #d6b68e;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+.services .services3 .leftSide p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #848383;
+}
+.services .services3 .leftSide button {
+  font-size: 1rem;
+  background: #05143d;
+  color: white;
+  border-radius: 0.6rem;
+  padding: 0.7rem 3rem;
+}
+.services .services3 .rightSide {
+  width: 40%;
+}
+.services .services3 .rightSide img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .services .services1,
+  .services .services2,
+  .services .services3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services .services1 .leftSide,
+  .services .services2 .rightSide,
+  .services .services3 .leftSide,
+  .services .services2 .leftSide,
+  .services .services3 .rightSide,
+  .services .services1 .rightSide {
+    width: 100%;
+  }
+
+  .services .services2 .rightSide button,
+  .services .services1 .leftSide button,
+  .services .services3 .leftSide button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .services .services1,
+  .services .services2,
+  .services .services3 {
+    gap: 1.5rem;
+    padding: 10px;
+  }
+}
+
+/* Small phone screens */
+@media (max-width: 480px) {
+  .services h1 {
+    font-size: 2.5rem;
+  }
+
+  .services .services1 .leftSide h3,
+  .services .services2 .rightSide h3,
+  .services .services3 .leftSide h3 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .services .services1 .leftSide p,
+  .services .services2 .rightSide p,
+  .services .services3 .leftSide p {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .services .services1 .rightSide img,
+  .services .services2 .leftSide img,
+  .services .services3 .rightSide img {
+    width: 100%;
+    height: auto;
+  }
+}

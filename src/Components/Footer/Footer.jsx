@@ -46,9 +46,12 @@ const Footer = () => {
             <div>
               <h4>Term & Conditions</h4>
               <ul>
-                <li>Address: Abc Pune 411 002</li>
-                <li>Gmail: abc@gmail.com</li>
-                <li>Mob No: 0000*******</li>
+                <li>
+                  Address:301,BALEWADI PLAZA,NEAR MITCON INSTITUTE,BALEWADI,
+                  PUNE CITY, <br /> MAHARASHTRA, PIN: 411045
+                </li>
+                <li>Gmail: assist@serensynthlabs.com</li>
+                <li>Mob No: +91 8062179313</li>
               </ul>
             </div>
           </div>

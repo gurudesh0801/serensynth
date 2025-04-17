@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import img from "../../assets/Images/image1.png";
+// import img from "../../assets/Images/image1.png";
 import "./HelpYouAchive.css";
 
 const HelpYouAchieve = () => {

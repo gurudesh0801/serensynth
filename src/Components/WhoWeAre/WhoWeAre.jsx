@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "./WhoWeAre.css";
 import aboutImg1 from "../../assets/Images/aboutImg.png";
 import aboutImg2 from "../../assets/Images/aboutImg2.png";
+import img1 from "../../assets/Images/about1.png";
+import img2 from "../../assets/Images/about2.png";
+import img3 from "../../assets/Images/about3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -66,6 +69,36 @@ const WhoWeAre = () => {
           </div>
           <div className="rightSide" data-aos="fade-left">
             <img src={aboutImg1} alt="Service 3" />
+          </div>
+        </div>
+      </div>
+
+      <div className="product-platform" data-aos="fade-up">
+        <h1>Products & Platform</h1>
+        <div className="fullSection" data-aos="fade-up">
+          <div className="sec3" data-aos="fade-left">
+            <img src={img3} alt="img1" />
+            <h4>Personalized Learning</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="sec2" data-aos="fade-left">
+            <img src={img2} alt="img2" />
+            <h4>Trusted content</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="sec1" data-aos="fade-left">
+            <img src={img1} alt="img3" />
+            <h4>Tools to empower teachers</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
         </div>
       </div>

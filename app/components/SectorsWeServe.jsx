@@ -25,7 +25,7 @@ export default function SectorsWeServe() {
         transition={{ duration: 0.6 }}
       >
         Industries We Elevate
-        <div className="mx-auto mt-2 h-[2px] w-80 bg-gray-300" />
+        <div className="mx-auto mt-2 h-[2px] w-40 bg-gray-300" />
       </motion.h2>
 
       <motion.div

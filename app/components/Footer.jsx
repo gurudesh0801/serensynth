@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="space-y-6 border-r border-gray900 pr-6">
           <Link href="/">
             <Image
-              src="/Logo.png"
+              src="/image/Logo.png"
               alt="Serensynth Logo"
               width={128}
               height={48}
@@ -72,8 +72,8 @@ export default function Footer() {
           <Link href="/seren-media" className="block hover:underline">
             Seren Media
           </Link>
-          <Link href="/serenxcel" className="block hover:underline">
-            SerenXcel
+          <Link href="/seren-express" className="block hover:underline">
+            Seren Express
           </Link>
           <Link href="/terms" className="block hover:underline">
             Terms & Conditions

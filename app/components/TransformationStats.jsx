@@ -19,7 +19,7 @@ export default function TransformationStats() {
         transition={{ duration: 0.6 }}
       >
         Transformation We’ve Driven
-        <div className="mx-auto mt-2 h-[2px] w-100 bg-gray-300" />
+        <div className="mx-auto mt-2 h-[2px] w-40 bg-gray-300" />
       </motion.h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
